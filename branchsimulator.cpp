@@ -16,10 +16,6 @@ using namespace std;
 //access state:
 #define NA 0 // no action
 
-
-
-
-
      struct config{
 
        int mSize;
@@ -47,8 +43,6 @@ using namespace std;
     }
 
      };
-
-
 
 int main(int argc, char* argv[]){
 
@@ -83,8 +77,7 @@ int main(int argc, char* argv[]){
 
    
   int varTorNT = 2;    // variable to be set with a value '1' for taken and '0' for nottaken 
-   
-
+  
     ifstream traces;
     ofstream tracesout;
     string outname;
@@ -132,13 +125,11 @@ int main(int argc, char* argv[]){
 
 
              if(booltoint_obj.fromVector(counterArray[tempbits_int]) == 3){
-
-
+                  
                   varTorNT = 1;
-
-
                   if(varTorNT == orig_int){
-
+                         
+                       cout << "Nothing to do."
 
                   }
                   else{
